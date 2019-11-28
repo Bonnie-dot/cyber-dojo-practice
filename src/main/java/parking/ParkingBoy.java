@@ -1,6 +1,7 @@
 package parking;
 
 import java.util.Arrays;
+import java.util.Optional;
 
 public abstract class ParkingBoy {
 
@@ -11,6 +12,7 @@ public abstract class ParkingBoy {
     }
 
     abstract Ticket park(Car car);
+    abstract Optional<Ticket> tryPark(Car car);
 
     public Car pickUp(Ticket ticket) {
         return Arrays.stream(this.parkingLots).filter(parkingLot -> parkingLot.isValidTicket(ticket))

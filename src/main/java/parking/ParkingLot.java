@@ -3,7 +3,7 @@ package parking;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ParkingLot implements Comparable<ParkingLot> {
+public class ParkingLot{
     private int space;
     private Map<Ticket, Car> ticketCarMap;
 
@@ -30,11 +30,6 @@ public class ParkingLot implements Comparable<ParkingLot> {
 
     public Integer getRemainCapacity() {
         return this.space - this.ticketCarMap.size();
-    }
-
-    @Override
-    public int compareTo(ParkingLot o) {
-        return o.getRemainCapacity() - this.getRemainCapacity();
     }
 
     public Boolean isValidTicket(Ticket ticket){

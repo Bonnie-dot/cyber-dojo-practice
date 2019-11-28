@@ -1,14 +1,22 @@
 package parking;
 
+import java.util.Optional;
+
 public class ParkingManger {
 
-    private GraduateParkingBoy graduateParkingBoy;
+    private ParkingBoy[] parkingBoys;
 
-    public ParkingManger(GraduateParkingBoy graduateParkingBoy) {
-        this.graduateParkingBoy=graduateParkingBoy;
+    public ParkingManger(ParkingBoy[] parkingBoys) {
+        this.parkingBoys=parkingBoys;
     }
 
     public Ticket askOtherPark(Car car) {
-        return graduateParkingBoy.park(car);
+        for (ParkingBoy parkingBoy : parkingBoys) {
+            Optional<Ticket> ticket = parkingBoy.tryPark(car);
+            if (ticket.isPresent()){
+                return ticket.get();
+            }
+        }
+        return null;
     }
 }

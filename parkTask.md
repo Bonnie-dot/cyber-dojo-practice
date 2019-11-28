@@ -139,10 +139,6 @@
   when park the car
   then return a ticket
   
-- given two cars and a parkingLot has spaces
-  when park the two cars
-  then return two different tickets
-  
 - given a car and a parkingLot has no space
   when park the car
   then tell the message "No more space"

@@ -151,4 +151,12 @@ public class parkingManagerTest {
 
         assertThat(result).isNotNull();
     }
+
+    @Test
+    void should_throw_no_more_space_exception_when_park_car__with_parking_lot_having_no_space() {
+
+        ParkingManger parkingManger = new ParkingManger(new ParkingLot[]{new ParkingLot(0)});
+
+        assertThatThrownBy(() -> parkingManger.park(new Car())).isInstanceOf(NoMoreSpaceException.class);
+    }
 }

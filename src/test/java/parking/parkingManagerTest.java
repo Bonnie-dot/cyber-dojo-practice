@@ -88,4 +88,24 @@ public class parkingManagerTest {
         assertThat(result).isNotNull();
 
     }
+
+    @Test
+    void should_return_two_ticket_when_ask_to_pick_up_car_having_a_graduate_parking_boy_and_a_smart_parking_boy_both_parking_your_cars() {
+
+        GraduateParkingBoy graduateParkingBoy = new GraduateParkingBoy(new ParkingLot[]{new ParkingLot(1)});
+        SmartParkingBoy smartParkingBoy = new SmartParkingBoy(new ParkingLot[]{new ParkingLot(1)});
+        ParkingBoy[] parkingBoys = {graduateParkingBoy, smartParkingBoy};
+        ParkingManger parkingManger = new ParkingManger(parkingBoys);
+        Car car1 = new Car();
+        Ticket ticketOne = parkingManger.askParkingBoyPark(car1);
+        Car car2 = new Car();
+        Ticket ticketTwo = parkingManger.askParkingBoyPark(car2);
+
+        Car getCarOne = parkingManger.askParkingBoyPickUp(ticketOne);
+        Car getCarTwo = parkingManger.askParkingBoyPickUp(ticketTwo);
+
+        assertThat(getCarOne).isEqualTo(car1);
+        assertThat(getCarTwo).isEqualTo(car2);
+
+    }
 }

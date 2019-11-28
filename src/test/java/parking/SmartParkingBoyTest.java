@@ -13,7 +13,7 @@ public class SmartParkingBoyTest {
         ParkingLot[] parkingLots = {new ParkingLot(1)};
         SmartParkingBoy smartParkingBoy = new SmartParkingBoy(parkingLots);
 
-        Ticket result = smartParkingBoy.park(new Car());
+        Ticket result =smartParkingBoy.park(new Car());
 
         assertThat(result).isNotNull();
     }

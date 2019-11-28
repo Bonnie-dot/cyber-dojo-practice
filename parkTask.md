@@ -95,26 +95,72 @@
   
 ### Parking Manager
 #### manage parking boy
-
+##### park boy park
 - given a car and a parking manager have a graduate parking boy with having a space parking lot 
-  when park car by graduate boy
+  when ask to park
   return a ticket
 
 - given two car and a parking manager have a graduate parking boy and a smart parking boy with having both a space parking lot
-  when park car by graduate boy
+  when ask to park
   return two ticket 
 
 - given a car and a parking manager have a graduate parking boy with having no space parking lot and a smart parking with having both a space parking lot
-  when park car by graduate boy
+  when ask to park
   return a ticket  
 
 - given two car and a parking manager have a graduate parking boy with having no space parking lot and a smart parking with having both a space parking lot
-  when park car by graduate boy
+  when ask to park
   return a ticket firstly and no more space secondly 
   
 - given a car and a parking manager have a graduate parking boy with having no space parking lot 
-  when park car by graduate boy
+  when ask to park
   return no more space  
+##### pick up boy park
+
+- given a ticket and a parking manager have a graduate parking boy with having put your car's parking lot
+  when ask to pick
+  return a car
+
+- given two ticket and a parking manager have a graduate parking boy and a smart parking boy both with having put your car's parking lot
+  when ask to pick
+  return two car 
    
-#### 
+- given a ticket and a parking manager have a graduate parking boy with having no parked your car
+  when ask to pick
+  return tell Invalid ticket
   
+- given a ticket and a parking manager have a graduate parking boy with having  your car
+  when ask to pick twice
+  return tell Invalid ticket  
+  
+#### depends on yourself
+##### park
+- given a car and a parkingLot has spaces
+  when park the car
+  then return a ticket
+  
+- given two cars and a parkingLot has spaces
+  when park the two cars
+  then return two different tickets
+  
+- given a car and a parkingLot has no space
+  when park the car
+  then tell the message "No more space"
+  
+##### get car  
+- given a parking lot parked your car
+  when get the car with the ticket
+  then return your car
+  
+- given a parking lot parked your two cars
+  when get the cars with two different tickets
+  then return your cars
+  
+- given a parking lot parked your car
+  when get car with the ticket twice
+  then return your car and tell the mess age "Invalid Ticket"
+ 
+- given a parking lot
+  when get car with invalid ticket
+  then tell the message "Invalid Ticket" 
+    

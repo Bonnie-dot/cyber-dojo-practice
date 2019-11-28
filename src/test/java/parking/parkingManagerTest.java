@@ -1,6 +1,11 @@
 package parking;
 
 import org.junit.jupiter.api.Test;
+import parking.exception.NoMoreSpaceException;
+import parking.parkingBoy.GraduateParkingBoy;
+import parking.parkingBoy.ParkingBoy;
+import parking.parkingBoy.ParkingManger;
+import parking.parkingBoy.SmartParkingBoy;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
 import static org.assertj.core.api.Java6Assertions.assertThatThrownBy;
@@ -54,8 +59,7 @@ public class parkingManagerTest {
         ParkingManger parkingManger = new ParkingManger(new ParkingBoy[]{graduateParkingBoy});
 
         assertThatThrownBy(() -> parkingManger.askOtherPark(new Car()))
-                .isInstanceOf(NoMoreSpaceException.class)
-                .hasMessage("No More Space");
+                .isInstanceOf(NoMoreSpaceException.class);
     }
 
 }

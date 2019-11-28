@@ -1,6 +1,9 @@
 package parking;
 
 import org.junit.jupiter.api.Test;
+import parking.exception.InvalidTicketException;
+import parking.exception.NoMoreSpaceException;
+import parking.parkingBoy.SmartParkingBoy;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 import static org.assertj.core.api.Java6Assertions.assertThat;
@@ -25,8 +28,7 @@ public class SmartParkingBoyTest {
         SmartParkingBoy smartParkingBoy = new SmartParkingBoy(new ParkingLot[]{parkingLot});
 
         assertThatThrownBy(() -> smartParkingBoy.park(new Car()))
-                .isInstanceOf(NoMoreSpaceException.class)
-                .hasMessage("No more space");
+                .isInstanceOf(NoMoreSpaceException.class);
     }
 
     @Test
@@ -47,8 +49,7 @@ public class SmartParkingBoyTest {
         SmartParkingBoy smartParkingBoy = new SmartParkingBoy(parkingLots);
 
         assertThatThrownBy(() -> smartParkingBoy.park(new Car()))
-                .isInstanceOf(NoMoreSpaceException.class)
-                .hasMessage("No more space");
+                .isInstanceOf(NoMoreSpaceException.class);
     }
 
     @Test
@@ -83,8 +84,7 @@ public class SmartParkingBoyTest {
         smartParkingBoy.park(testCar);
 
         assertThatThrownBy(()->smartParkingBoy.pickUp(new Ticket()))
-                .isInstanceOf(InvalidTicketException.class)
-                .hasMessage("Invalid Ticket");
+                .isInstanceOf(InvalidTicketException.class);
     }
 }
 

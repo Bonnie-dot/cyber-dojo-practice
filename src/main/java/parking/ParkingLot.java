@@ -1,5 +1,8 @@
 package parking;
 
+import parking.exception.InvalidTicketException;
+import parking.exception.NoMoreSpaceException;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +17,7 @@ public class ParkingLot{
 
     public Ticket park(Car car) {
         if (this.ticketCarMap.size() == space) {
-            throw new NoMoreSpaceException("No more space");
+            throw new NoMoreSpaceException();
         }
         Ticket ticket = new Ticket();
         this.ticketCarMap.put(ticket, car);
@@ -23,7 +26,7 @@ public class ParkingLot{
 
     public Car pickUp(Ticket ticket) {
         if (!this.ticketCarMap.containsKey(ticket)) {
-            throw new InvalidTicketException("Invalid Ticket");
+            throw new InvalidTicketException();
         }
         return this.ticketCarMap.remove(ticket);
     }

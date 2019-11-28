@@ -1,6 +1,8 @@
 package parking;
 
 import org.junit.jupiter.api.Test;
+import parking.exception.InvalidTicketException;
+import parking.exception.NoMoreSpaceException;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -34,8 +36,7 @@ class ParkingLotTest {
         parkingLot.park(new Car());
 
         assertThatExceptionOfType(NoMoreSpaceException.class)
-                .isThrownBy(() -> parkingLot.park(new Car()))
-                .withMessage("No more space");
+                .isThrownBy(() -> parkingLot.park(new Car()));
     }
 
     @Test
@@ -74,8 +75,7 @@ class ParkingLotTest {
         parkingLot.pickUp(ticket);
 
         assertThatExceptionOfType(InvalidTicketException.class)
-                .isThrownBy(()->parkingLot.pickUp(ticket))
-                .withMessage("Invalid Ticket");
+                .isThrownBy(() -> parkingLot.pickUp(ticket));
 
     }
 
@@ -88,7 +88,6 @@ class ParkingLotTest {
         Ticket ticket = new Ticket();
 
         assertThatExceptionOfType(InvalidTicketException.class)
-                .isThrownBy(()->parkingLot.pickUp(ticket))
-                .withMessage("Invalid Ticket");
+                .isThrownBy(() -> parkingLot.pickUp(ticket));
     }
 }

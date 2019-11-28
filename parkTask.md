@@ -125,11 +125,11 @@
   when ask to pick
   return two car 
    
-- given a ticket and a parking manager have a graduate parking boy with having no parked your car
+- given a fake ticket and a parking manager have a graduate parking boy with having no parked your car
   when ask to pick
   return tell Invalid ticket
   
-- given a ticket and a parking manager have a graduate parking boy with having  your car
+- given a ticket and a parking manager have a graduate parking boy with having  no your car
   when ask to pick twice
   return tell Invalid ticket  
   

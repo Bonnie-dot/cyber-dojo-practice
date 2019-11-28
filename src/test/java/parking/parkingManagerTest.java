@@ -1,6 +1,7 @@
 package parking;
 
 import org.junit.jupiter.api.Test;
+import parking.exception.InvalidTicketException;
 import parking.exception.NoMoreSpaceException;
 import parking.parkingBoy.GraduateParkingBoy;
 import parking.parkingBoy.ParkingBoy;
@@ -107,5 +108,16 @@ public class parkingManagerTest {
         assertThat(getCarOne).isEqualTo(car1);
         assertThat(getCarTwo).isEqualTo(car2);
 
+    }
+
+    @Test
+    void should_throw_invalid_ticket_exception_when_ask_to_pick_up_car_having_fake_ticket() {
+
+        GraduateParkingBoy graduateParkingBoy = new GraduateParkingBoy(new ParkingLot[]{new ParkingLot(1)});
+        ParkingManger parkingManger = new ParkingManger(new ParkingBoy[]{graduateParkingBoy});
+        parkingManger.askParkingBoyPark(new Car());
+
+        assertThatThrownBy(() -> parkingManger.askParkingBoyPickUp(new Ticket()))
+                .isInstanceOf(InvalidTicketException.class);
     }
 }

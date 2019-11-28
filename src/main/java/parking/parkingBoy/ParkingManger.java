@@ -2,6 +2,7 @@ package parking.parkingBoy;
 
 import parking.Car;
 import parking.Ticket;
+import parking.exception.InvalidTicketException;
 import parking.exception.NoMoreSpaceException;
 
 import java.util.Optional;
@@ -32,7 +33,7 @@ public class ParkingManger {
             if (carOptional.isPresent()) {
                 return carOptional.get();
             } else if (i == parkingBoys.length - 1) {
-                throw new NoMoreSpaceException();
+                throw new InvalidTicketException();
             }
         }
         return null;

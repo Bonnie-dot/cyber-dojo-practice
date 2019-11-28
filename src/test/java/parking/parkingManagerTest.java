@@ -18,7 +18,7 @@ public class parkingManagerTest {
         GraduateParkingBoy graduateParkingBoy = new GraduateParkingBoy(new ParkingLot[]{new ParkingLot(1)});
         ParkingManger parkingManger = new ParkingManger(new ParkingBoy[]{graduateParkingBoy});
 
-        Ticket ticket = parkingManger.askOtherPark(new Car());
+        Ticket ticket = parkingManger.askParkingBoyPark(new Car());
 
         assertThat(ticket).isNotNull();
     }
@@ -31,8 +31,8 @@ public class parkingManagerTest {
         ParkingBoy[] parkingBoys={graduateParkingBoy,smartParkingBoy};
         ParkingManger parkingManger = new ParkingManger(parkingBoys);
 
-        Ticket ticketOne = parkingManger.askOtherPark(new Car());
-        Ticket ticketTwo = parkingManger.askOtherPark(new Car());
+        Ticket ticketOne = parkingManger.askParkingBoyPark(new Car());
+        Ticket ticketTwo = parkingManger.askParkingBoyPark(new Car());
 
         assertThat(ticketOne).isNotNull();
         assertThat(ticketTwo).isNotNull();
@@ -47,7 +47,7 @@ public class parkingManagerTest {
         ParkingBoy[] parkingBoys = {graduateParkingBoy, smartParkingBoy};
         ParkingManger parkingManger = new ParkingManger(parkingBoys);
 
-        Ticket result = parkingManger.askOtherPark(new Car());
+        Ticket result = parkingManger.askParkingBoyPark(new Car());
 
         assertThat(result).isNotNull();
     }
@@ -58,7 +58,7 @@ public class parkingManagerTest {
         GraduateParkingBoy graduateParkingBoy = new GraduateParkingBoy(new ParkingLot[]{new ParkingLot(0)});
         ParkingManger parkingManger = new ParkingManger(new ParkingBoy[]{graduateParkingBoy});
 
-        assertThatThrownBy(() -> parkingManger.askOtherPark(new Car()))
+        assertThatThrownBy(() -> parkingManger.askParkingBoyPark(new Car()))
                 .isInstanceOf(NoMoreSpaceException.class);
     }
 
@@ -70,9 +70,22 @@ public class parkingManagerTest {
         ParkingBoy[] parkingBoys = {graduateParkingBoy, smartParkingBoy};
         ParkingManger parkingManger = new ParkingManger(parkingBoys);
 
-        Ticket ticketOne = parkingManger.askOtherPark(new Car());
+        Ticket ticketOne = parkingManger.askParkingBoyPark(new Car());
 
         assertThat(ticketOne).isNotNull();
-        assertThatThrownBy(() -> parkingManger.askOtherPark(new Car())).isInstanceOf(NoMoreSpaceException.class);
+        assertThatThrownBy(() -> parkingManger.askParkingBoyPark(new Car())).isInstanceOf(NoMoreSpaceException.class);
+    }
+
+    @Test
+    void should_return_a_car_when_ask_to_pick_up_car_having_a_graduate_parking_boy_with_having_put_your_cars_parking_lot_() {
+
+        GraduateParkingBoy graduateParkingBoy = new GraduateParkingBoy(new ParkingLot[]{new ParkingLot(1)});
+        ParkingManger parkingManger = new ParkingManger(new ParkingBoy[]{graduateParkingBoy});
+        Ticket ticket = parkingManger.askParkingBoyPark(new Car());
+
+        Car result = parkingManger.askParkingBoyPickUp(ticket);
+
+        assertThat(result).isNotNull();
+
     }
 }

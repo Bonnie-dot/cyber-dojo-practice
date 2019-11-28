@@ -20,9 +20,13 @@ public abstract class ParkingBoy {
     abstract Optional<Ticket> tryPark(Car car);
 
     public Car pickUp(Ticket ticket) {
+        return tryPickUp(ticket).orElseThrow(InvalidTicketException::new);
+    }
+
+    public Optional<Car> tryPickUp(Ticket ticket) {
         return Arrays.stream(this.parkingLots).filter(parkingLot -> parkingLot.isValidTicket(ticket))
-                .findFirst()
-                .orElseThrow(InvalidTicketException::new)
-                .pickUp(ticket);
+                .map(parkingLot -> parkingLot.pickUp(ticket))
+                .findFirst();
+
     }
 }

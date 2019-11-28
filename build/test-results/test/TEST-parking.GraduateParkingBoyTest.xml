@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="parking.GraduateParkingBoyTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-11-28T11:12:58" hostname="CNqingchen" time="0.005">
+  <properties/>
+  <testcase name="should_return_a_ticket_when_park_car_having_a_graduate_parking_boy_with_having_a_space_parking_lot()" classname="parking.GraduateParkingBoyTest" time="0.001"/>
+  <testcase name="should_return_a_car_when_pick_up_car_having_a_graduate_parking_boy_who_having_the_parking_lot_with_parking_my_car()" classname="parking.GraduateParkingBoyTest" time="0.001"/>
+  <testcase name="should_throw_invalid_ticket_exception_when_pick_up_car_having_a_graduate_parking_boy_who_use_the_same_ticket_twice()" classname="parking.GraduateParkingBoyTest" time="0.001"/>
+  <testcase name="should_throw_no_more_space_exception_when_park_car_having_a_graduate_parking_boy_with_having_no_space_parking_lot()" classname="parking.GraduateParkingBoyTest" time="0.001"/>
+  <testcase name="should_return_two_car_when_get_car_in_different_parking_lots()" classname="parking.GraduateParkingBoyTest" time="0.0"/>
+  <testcase name="should_return_two_different_tickets_when_park_cars_having_a_graduate_boy_with_having_a_space_parking_lot_and_having_two_space_parking_lot()" classname="parking.GraduateParkingBoyTest" time="0.001"/>
+  <system-out><![CDATA[true
+true
+false
+true
+false
+true
+true
+false
+true
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

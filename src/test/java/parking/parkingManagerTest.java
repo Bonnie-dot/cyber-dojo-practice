@@ -62,4 +62,17 @@ public class parkingManagerTest {
                 .isInstanceOf(NoMoreSpaceException.class);
     }
 
+    @Test
+    void should_return_a_ticket_and_no_more_space_exception_when_ask_to_park_having_a_graduate_parking_boy_having_no_space_and_a_smart_parking_boy_with_a_space() {
+
+        GraduateParkingBoy graduateParkingBoy = new GraduateParkingBoy(new ParkingLot[]{new ParkingLot(0)});
+        SmartParkingBoy smartParkingBoy = new SmartParkingBoy(new ParkingLot[]{new ParkingLot(1)});
+        ParkingBoy[] parkingBoys = {graduateParkingBoy, smartParkingBoy};
+        ParkingManger parkingManger = new ParkingManger(parkingBoys);
+
+        Ticket ticketOne = parkingManger.askOtherPark(new Car());
+
+        assertThat(ticketOne).isNotNull();
+        assertThatThrownBy(() -> parkingManger.askOtherPark(new Car())).isInstanceOf(NoMoreSpaceException.class);
+    }
 }

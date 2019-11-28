@@ -31,4 +31,17 @@ public class parkingManagerTest {
         assertThat(ticketTwo).isNotNull();
         assertThat(ticketOne).isNotEqualTo(ticketTwo);
     }
+
+    @Test
+    void should_return_a_ticket_when_ask_to_park_car_having_a_graduate_parking_boy_with_no_space_for_parking_lot_and_smart_parking_boy_having_a_space() {
+
+        GraduateParkingBoy graduateParkingBoy = new GraduateParkingBoy(new ParkingLot[]{new ParkingLot(0)});
+        SmartParkingBoy smartParkingBoy = new SmartParkingBoy(new ParkingLot[]{new ParkingLot(1)});
+        ParkingBoy[] parkingBoys = {graduateParkingBoy, smartParkingBoy};
+        ParkingManger parkingManger = new ParkingManger(parkingBoys);
+
+        Ticket result = parkingManger.askOtherPark(new Car());
+
+        assertThat(result).isNotNull();
+    }
 }

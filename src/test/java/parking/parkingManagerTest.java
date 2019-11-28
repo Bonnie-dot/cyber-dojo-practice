@@ -120,4 +120,16 @@ public class parkingManagerTest {
         assertThatThrownBy(() -> parkingManger.askParkingBoyPickUp(new Ticket()))
                 .isInstanceOf(InvalidTicketException.class);
     }
+
+    @Test
+    void should_throw_invalid_ticket_exception_when_ask_to_pick_up_car_using_a_ticket_twice() {
+
+        GraduateParkingBoy graduateParkingBoy = new GraduateParkingBoy(new ParkingLot[]{new ParkingLot(1)});
+        ParkingManger parkingManger = new ParkingManger(new ParkingBoy[]{graduateParkingBoy});
+        Ticket ticket = parkingManger.askParkingBoyPark(new Car());
+        parkingManger.askParkingBoyPickUp(ticket);
+
+        assertThatThrownBy(() -> parkingManger.askParkingBoyPickUp(ticket))
+                .isInstanceOf(InvalidTicketException.class);
+    }
 }

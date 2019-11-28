@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9b353e7-b90e-48e1-871a-7a53d28edcde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parkTask.md" beforeDir="false" afterPath="$PROJECT_DIR$/parkTask.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parking/parkingBoy/ParkingManger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parking/parkingBoy/ParkingManger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/parking/parkingManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parking/parkingManagerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,8 +43,8 @@
             <entry file="file://$PROJECT_DIR$/parkTask.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
-                  <first_editor relative-caret-position="299">
-                    <caret line="126" column="3" selection-start-line="126" selection-start-column="3" selection-end-line="126" selection-end-column="3" />
+                  <first_editor relative-caret-position="342">
+                    <caret line="127" column="15" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="15" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -74,11 +64,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/parking/parkingManagerTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="584">
-                  <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+                <state relative-caret-position="615">
+                  <caret line="119" column="55" lean-forward="true" selection-start-line="119" selection-start-column="55" selection-end-line="119" selection-end-column="55" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -86,11 +76,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/parking/parkingBoy/ParkingManger.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="596">
-                  <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+                <state relative-caret-position="417">
+                  <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -138,7 +128,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/parkTask.md" />
         <option value="$PROJECT_DIR$/src/main/java/parking/ParkingBoy.java" />
         <option value="$PROJECT_DIR$/src/main/java/parking/GraduateParkingBoy.java" />
         <option value="$PROJECT_DIR$/src/main/java/parking/SmartParkingBoy.java" />
@@ -152,8 +141,9 @@
         <option value="$PROJECT_DIR$/src/test/java/parking/GraduateParkingBoyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/parking/parkingBoy/GraduateParkingBoy.java" />
         <option value="$PROJECT_DIR$/src/main/java/parking/parkingBoy/ParkingBoy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/parking/parkingBoy/ParkingManger.java" />
+        <option value="$PROJECT_DIR$/parkTask.md" />
         <option value="$PROJECT_DIR$/src/test/java/parking/parkingManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/parking/parkingBoy/ParkingManger.java" />
       </list>
     </option>
   </component>
@@ -283,27 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.parkingManagerTest.should_return_two_ticket_when_ask_to_pick_up_car_having_a_graduate_parking_boy_and_a_smart_parking_boy_both_parking_your_cars">
-    <configuration name="Tests in 'tdd.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests *" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.parkingManagerTest.should_throw_invalid_ticket_exception_when_ask_to_pick_up_car_using_a_ticket_twice">
     <configuration name="parkingManagerTest.should_return_a_car_when_ask_to_pick_up_car_having_a_graduate_parking_boy_with_having_put_your_cars_parking_lot_" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -344,26 +314,6 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="parkingManagerTest.should_return_throw_no_more_space_exception_when_ask_to_park_car_having_a_graduate_parking_with_having_no_space_parking_lot" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;parking.parkingManagerTest.should_return_throw_no_more_space_exception_when_ask_to_park_car_having_a_graduate_parking_with_having_no_space_parking_lot&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="parkingManagerTest.should_return_two_ticket_when_ask_to_pick_up_car_having_a_graduate_parking_boy_and_a_smart_parking_boy_both_parking_your_cars" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -384,13 +334,53 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="parkingManagerTest.should_throw_invalid_ticket_exception_when_ask_to_pick_up_car_having_fake_ticket" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;parking.parkingManagerTest.should_throw_invalid_ticket_exception_when_ask_to_pick_up_car_having_fake_ticket&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="parkingManagerTest.should_throw_invalid_ticket_exception_when_ask_to_pick_up_car_using_a_ticket_twice" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;parking.parkingManagerTest.should_throw_invalid_ticket_exception_when_ask_to_pick_up_car_using_a_ticket_twice&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.parkingManagerTest.should_throw_invalid_ticket_exception_when_ask_to_pick_up_car_using_a_ticket_twice" />
+        <item itemvalue="Gradle.parkingManagerTest.should_throw_invalid_ticket_exception_when_ask_to_pick_up_car_having_fake_ticket" />
         <item itemvalue="Gradle.parkingManagerTest.should_return_two_ticket_when_ask_to_pick_up_car_having_a_graduate_parking_boy_and_a_smart_parking_boy_both_parking_your_cars" />
         <item itemvalue="Gradle.parkingManagerTest.should_return_a_car_when_ask_to_pick_up_car_having_a_graduate_parking_boy_with_having_put_your_cars_parking_lot_" />
         <item itemvalue="Gradle.parkingManagerTest.should_return_a_ticket_and_no_more_space_exception_when_ask_to_park_having_a_graduate_parking_boy_having_no_space_and_a_smart_parking_boy_with_a_space" />
-        <item itemvalue="Gradle.Tests in 'tdd.test'" />
-        <item itemvalue="Gradle.parkingManagerTest.should_return_throw_no_more_space_exception_when_ask_to_park_car_having_a_graduate_parking_with_having_no_space_parking_lot" />
       </list>
     </recent_temporary>
   </component>
@@ -404,7 +394,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574939356286</updated>
-      <workItem from="1574939357584" duration="8212000" />
+      <workItem from="1574939357584" duration="8541000" />
     </task>
     <task id="LOCAL-00001" summary="[feat][parking manager]return a ticket when ask to park">
       <created>1574942059263</created>
@@ -455,16 +445,17 @@
       <option name="project" value="LOCAL" />
       <updated>1574949405925</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[feat][parking manager]return two car when ask to pick up car">
+      <created>1574949717436</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574949717436</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_in_'tdd_test' - 2019.11.28 at 21h 36m 02s.xml">
-      <configuration name="Tests in 'tdd.test'" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="Tests_in_'tdd_test' - 2019.11.28 at 21h 36m 31s.xml">
-      <configuration name="Tests in 'tdd.test'" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="Tests_in_'tdd_test' - 2019.11.28 at 21h 37m 40s.xml">
       <configuration name="Tests in 'tdd.test'" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -489,9 +480,15 @@
     <history-entry file="parkingManagerTest_should_return_two_ticket_when_ask_to_pick_up_car_having_a_graduate_parking_boy_and_a_smart_parking_boy_both_parking_your_cars - 2019.11.28 at 22h 01m 20s.xml">
       <configuration name="parkingManagerTest.should_return_two_ticket_when_ask_to_pick_up_car_having_a_graduate_parking_boy_and_a_smart_parking_boy_both_parking_your_cars" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="parkingManagerTest_should_throw_invalid_ticket_exception_when_ask_to_pick_up_car_having_fake_ticket - 2019.11.28 at 22h 06m 37s.xml">
+      <configuration name="parkingManagerTest.should_throw_invalid_ticket_exception_when_ask_to_pick_up_car_having_fake_ticket" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="parkingManagerTest_should_throw_invalid_ticket_exception_when_ask_to_pick_up_car_having_fake_ticket - 2019.11.28 at 22h 07m 00s.xml">
+      <configuration name="parkingManagerTest.should_throw_invalid_ticket_exception_when_ask_to_pick_up_car_having_fake_ticket" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8212000" />
+    <option name="totallyTimeSpent" value="8541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="33" y="23" width="1680" height="1027" extended-state="0" />
@@ -513,7 +510,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.091008775" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3125" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -542,7 +539,8 @@
     <MESSAGE value="[refactor][parking manager]cancel exception message and set directory to put parking boy" />
     <MESSAGE value="[feat][parking manager]return a ticket and throw no more space exception when ask to park for only for one space" />
     <MESSAGE value="[feat][parking manager]return a car when ask to pick up car having a graduate parking boy having parking your car" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat][parking manager]return a car when ask to pick up car having a graduate parking boy having parking your car" />
+    <MESSAGE value="[feat][parking manager]return two car when ask to pick up car" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat][parking manager]return two car when ask to pick up car" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -573,16 +571,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parkTask.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="299">
-            <caret line="126" column="3" selection-start-line="126" selection-start-column="3" selection-end-line="126" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -652,20 +640,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/parking/parkingBoy/ParkingManger.java">
+    <entry file="file://$PROJECT_DIR$/parkTask.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="342">
+            <caret line="127" column="15" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parking/parkingManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        <state relative-caret-position="615">
+          <caret line="119" column="55" lean-forward="true" selection-start-line="119" selection-start-column="55" selection-end-line="119" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/parking/parkingManagerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/parking/parkingBoy/ParkingManger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="417">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -17,6 +17,7 @@ public abstract class ParkingBoy {
     }
 
     abstract Ticket park(Car car);
+
     abstract Optional<Ticket> tryPark(Car car);
 
     public Car pickUp(Ticket ticket) {

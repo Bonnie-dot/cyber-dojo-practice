@@ -11,7 +11,7 @@ import parking.parkingBoy.SmartParkingBoy;
 import static org.assertj.core.api.Java6Assertions.assertThat;
 import static org.assertj.core.api.Java6Assertions.assertThatThrownBy;
 
-public class parkingManagerTest {
+public class ParkingManagerTest {
 
     @Test
     void should_return_ticket_when_ask_to_park_car_having_a_graduate_parking_with_having_a_space_parking_lot() {
@@ -143,7 +143,7 @@ public class parkingManagerTest {
     }
 
     @Test
-    void should_return_a_car_when_park_car_with_parking_lot_has_space() {
+    void should_return_a_ticket_when_park_car_with_parking_lot_has_space() {
 
         ParkingManger parkingManger = new ParkingManger(new ParkingLot[]{new ParkingLot(1)});
 
@@ -158,5 +158,17 @@ public class parkingManagerTest {
         ParkingManger parkingManger = new ParkingManger(new ParkingLot[]{new ParkingLot(0)});
 
         assertThatThrownBy(() -> parkingManger.park(new Car())).isInstanceOf(NoMoreSpaceException.class);
+    }
+
+    @Test
+    void should_return_a_car_when_pick_up_with_parking_lot_having_put_your_car() {
+
+        ParkingManger parkingManger = new ParkingManger(new ParkingLot[]{new ParkingLot(1)});
+        Car car = new Car();
+        Ticket ticket = parkingManger.park(car);
+
+        Car getCar = parkingManger.pickUp(ticket);
+
+        assertThat(getCar).isEqualTo(car);
     }
 }
